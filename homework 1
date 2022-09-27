@@ -97,3 +97,19 @@ public class lab1_task1 {
 
     }
 }
+
+// лаба 0 задание 3
+
+----
+        if (friend1_pay > friend2_giveback)
+        {
+            System.out.println("друг 1 должен вернуть:", friend1_pay, " руб");
+        }
+        if (friend1_pay < friend2_giveback)
+        {
+            System.out.println("другу 1 должны отдать:", friend1_giveback, " руб");
+        }
+
+        System.out.println("другу 1 должны отдать:");
+        System.out.println("ЕСЛИ ПОКУПАЛИ НЕ ПОРОВНУ:");
+        System.out.println("ЕСЛИ ПОКУПАЛИ НЕ ПОРОВНУ:");

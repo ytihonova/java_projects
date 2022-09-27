@@ -1,0 +1,99 @@
+// Лаба 0 задача 1
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int cost = in.nextInt();
+        double cost_with_sale = 0.77 * cost;
+
+        System.out.print(cost_with_sale);
+        in.close();
+    }
+}
+
+// Лаба 0 задача 2
+
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        double num_windowpane = in.nextInt();
+        double vitrag = (420/4)*num_windowpane + 75*num_windowpane;
+        double stekolchik = (440/4)*num_windowpane + 65*num_windowpane;
+        double master = (470.0/4.0)*10 + 55*10;
+        double low_cost = Math.min(vitrag, Math.min(stekolchik, master));
+
+        String name_low_cost = "";
+        if (low_cost == vitrag)
+        {
+            name_low_cost = "vitrag";
+        }
+        if (low_cost == vitrag)
+            name_low_cost = "stekolchik";
+        if (low_cost == master)
+            name_low_cost = "master";
+
+        System.out.println(name_low_cost);
+        System.out.print(low_cost);
+        in.close();
+    }
+}
+
+// Лаба 1 задание 1
+
+import java.util.Scanner;
+
+public class lab1_task1 {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        double year = in.nextInt();
+        double ostatok = year % 12;
+        String name_of_year;
+
+        if (ostatok == 0) {
+            System.out.print("это год обезьяны");
+        }
+        if (ostatok == 1) {
+            System.out.print("это год курицы");
+        }
+        if (ostatok == 2) {
+            System.out.print("это год собаки");
+        }
+        if (ostatok == 3) {
+            System.out.print("это год свиньи");
+        }
+        if (ostatok == 4) {
+            System.out.print("это год крысы");
+        }
+        if (ostatok == 5) {
+            System.out.print("это год коровы");
+        }
+        if (ostatok == 6) {
+            System.out.print("это год тигра");
+        }
+        if (ostatok == 7) {
+            System.out.print("это год зайца");
+        }
+        if (ostatok == 8) {
+            System.out.print("это год дракона");
+        }
+        if (ostatok == 9) {
+            System.out.print("это год змеи");
+        }
+        if (ostatok == 10) {
+            System.out.print("это год лошади");
+        }
+        if (ostatok == 11) {
+            System.out.print("это год овцы");
+        }
+
+        in.close();
+
+    }
+}
